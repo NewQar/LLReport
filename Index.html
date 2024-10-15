@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Upload Excel and CSV Files</title>
+</head>
+<body>
+    <h1>Upload Excel and CSV Files</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <label for="learner_detail">Upload Learner Detail (CSV):</label>
+        <input type="file" name="learner_detail" id="learner_detail" accept=".csv"><br>
+        <label for="learner_summary">Upload Learner Summary (CSV):</label>
+        <input type="file" name="learner_summary" id="learner_summary" accept=".csv"><br>
+        <label for="users">Upload Users (Excel):</label>
+        <input type="file" name="users" id="users" accept=".xlsx"><br>
+        <input type="submit" value="Upload">
+    </form>
+</body>
+</html>
